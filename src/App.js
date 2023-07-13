@@ -52,7 +52,7 @@ function App()
         //const updatedBooks =[...books, {id: Math.round(Math.random()*100000), title}];
         //setBooks(updatedBooks);
 
-       const response = await axios.post('http://localhost:3001/books', {title});
+       const response = await axios.post('http://localhost:3001/books/', {title});
        const updatedBooks = [...books, response.data];
        setBooks(updatedBooks);
     };
