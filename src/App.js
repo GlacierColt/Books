@@ -14,10 +14,7 @@ function App()
         setBooks(response.data);
     }
 
-    useEffect(() => {
-        fetchBooks();
-
-    }, []);
+    useEffect(() => {fetchBooks();}, []);
 
     const deleteBook = async (id) => 
     {
