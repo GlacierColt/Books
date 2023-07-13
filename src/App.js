@@ -9,7 +9,7 @@ function App()
 {
     const {fetchBooks} = useContext(BooksContext);
 
-    useEffect(() => {fetchBooks()}, []);
+    useEffect(() => {fetchBooks();}, []);
 
     return <div className="app">
         <h1>Reading List</h1>
